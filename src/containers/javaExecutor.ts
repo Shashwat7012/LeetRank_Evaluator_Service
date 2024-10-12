@@ -51,7 +51,7 @@ class JavaExecutor implements CodeExecutorStrategy {
             if(codeResponse.trim() === outputCase.trim()) {
                 return {output: codeResponse, status: "SUCCESS"};
             } else {
-                return {output: codeResponse, status: "WA"};
+                return {output: codeResponse, status: "Wrong Answer"};
             }
 
         } catch (error) {
